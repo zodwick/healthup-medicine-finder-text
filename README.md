@@ -1,3 +1,3 @@
 #  tensorflow based OCR for health-up
 finds meicine name from text
-need to add ui card
+working has css synthax errors in card.css
