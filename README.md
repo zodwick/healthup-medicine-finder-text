@@ -1,2 +1,3 @@
 # react-image-to-text
-this is react web app which is used to convert image to text using tessaract.js
+image to text conversion for health-up
+needs text to UI card elemmt
