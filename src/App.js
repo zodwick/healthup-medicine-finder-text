@@ -3,11 +3,37 @@ import Tesseract from 'tesseract.js';
 
 import './style.css';
 
+
+function check(text) {
+  const p = "para";
+  const v = text.toLowerCase()
+  const a = "ventolin"
+  const h = "hydroc"
+
+
+  if (v.includes(p)) {
+    return <h1>paracetamol</h1>;
+  }
+  if (v.includes(a)) {
+    return <h1>ventolin</h1>;
+  }
+  if (v.includes(h)) {
+    return <h1>hydrocodone</h1>;
+  }
+
+
+ 
+}
+
+
+
 const App = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [image, setImage] = React.useState('');
   const [text, setText] = React.useState('');
   const [progress, setProgress] = React.useState(0);
+ console.log(text)
+
 
   const handleSubmit = () => {
     setIsLoading(true);
@@ -64,12 +90,17 @@ const App = () => {
           )}
           {!isLoading && text && (
             <>
-              <textarea
+           <div>
+              {check(text)}
+            </div>
+              {/* <textarea
                 className="form-control w-100 mt-5"
                 rows="30"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-              ></textarea>
+                
+
+              ></textarea> */}
             </>
           )}
         </div>
