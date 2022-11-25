@@ -2,7 +2,7 @@ import React from 'react';
 import Tesseract from 'tesseract.js';
 
 import './style.css';
-
+import './card.css';
 
 function check(text) {
   const p = "para";
@@ -10,18 +10,42 @@ function check(text) {
   const a = "ventolin"
   const h = "hydroc"
 
-
   if (v.includes(p)) {
-    return <h1>paracetamol</h1>;
+    return (
+    <div class="card">
+        <div className="imgBx">
+            <img src="https://img.freepik.com/premium-vector/tablet-capsule-medicine-icon-illustration-healthcare-medical-icon-concept-isolated_138676-882.jpg?w=2000"></img>
+        </div>
+        <div className="content">
+        <div className="details">
+            <h2>
+                Paracetamol<br></br><span>treat fever and mild pain </span>
+            </h2>
+            <div className="data">
+                <h3>An analgesic and antipyretic drug that is used to temporarily relieve mild-to-moderate pain and fever. It is commonly included as an ingredient in cold and flu medications and is also used on its own.</h3>
+
+
+            </div>
+
+            <div className="actionBtn">
+                <button>Buy Now</button>
+                <button>Know more</button>
+            </div>
+        </div>
+
+        </div>
+
+
+    </div>
+    )
   }
+
   if (v.includes(a)) {
     return <h1>ventolin</h1>;
   }
   if (v.includes(h)) {
     return <h1>hydrocodone</h1>;
   }
-
-
  
 }
 
