@@ -22,7 +22,7 @@ function check(text) {
                 Paracetamol<br></br><span>treat fever and mild pain </span>
             </h2>
             <div className="data">
-                <h3>An analgesic and antipyretic drug that is used to temporarily relieve mild-to-moderate pain and fever. It is commonly included as an ingredient in cold and flu medications and is also used on its own.</h3>
+                An analgesic and antipyretic drug that is used to temporarily relieve mild-to-moderate pain and fever. It is commonly included as an ingredient in cold and flu medications and is also used on its own.
 
 
             </div>
